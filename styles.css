@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background-color: #1c1c1c; /* Dark background */
+  color: #e5e5e5; /* Soft light text */
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #111; /* Deep black background */
+  color: #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo img {
+  width: 150px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #e5e5e5;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: gold; /* Luxurious hover effect */
+}
+
+header .cart a {
+  text-decoration: none;
+  color: #e5e5e5;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Section: Gallery */
+#gallery {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #1c1c1c;
+}
+
+#gallery h1 {
+  font-size: 2.5rem;
+  color: gold;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Section: Products */
+#products {
+  padding: 4rem 2rem;
+  background: #111;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.product {
+  background: #222;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product h3 {
+  margin: 1rem 0 0.5rem;
+  color: gold;
+}
+
+.product button {
+  background: gold;
+  border: none;
+  color: #111;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Section: About */
+#about {
+  padding: 4rem 2rem;
+  background: #1c1c1c;
+}
+
+/* Section: Contact */
+#contact {
+  padding: 4rem 2rem;
+  background: #111;
+}
